@@ -1,0 +1,20 @@
+{
+    "name": "tonjoo/rangka",
+    "description": "Wordpress widget post list",
+    "license": "MIT",
+    "homepage": "http://tonjoo.com",
+    "authors": [
+        {
+            "name": "Eringga Sutandang",
+            "email": "eringga23@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Boombar\\": "src/"
+        }
+    }
+}

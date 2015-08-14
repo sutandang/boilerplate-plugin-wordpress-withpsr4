@@ -1,0 +1,591 @@
+
+		/* Global CSS for Boom Bar */
+		.boom_bar * {
+			height: auto;
+			width: auto;
+			margin: 0;
+			padding: 0;
+		}
+
+		.boom_bar .boom_bar-inner-container * {
+			text-transform: none;
+			letter-spacing: normal;
+			font-size: 16px;
+		}
+
+		.boom_bar :before,
+		.boom_bar :after {
+			content: normal;
+		}
+		.boom_bar,
+		.boom_bar::before,
+		.boom_bar::after {
+			-webkit-box-sizing:  content-box;
+			-moz-box-sizing: content-box;
+			-ms-box-sizing:  content-box;
+			box-sizing: content-box;
+		}
+		.boom_bar {
+			direction: ltr;
+			background: #666;
+			color: #777777;
+			min-height: 28px;
+			left: 0;
+			width: 100%;
+			z-index: 99998;
+			*position: relative;
+			*z-index: 2;
+			overflow: hidden;
+			padding: 9px 0 8px;
+		}
+
+		html body.boom_bar-static-top-no_wpab .boom_bar,
+		html body.boom_bar-static-top-above_wpab .boom_bar,
+		html body.boom_bar-static-top-below_wpab .boom_bar {
+			position: absolute;
+			top: 0;
+		}
+
+		html body.boom_bar-static-top-below_wpab .boom_bar {
+			top: 32px;
+		}
+
+		html body.boom_bar-static-bottom-no_wpab .boom_bar {
+			position: static;
+			bottom: 0;
+		}
+
+		html body.boom_bar-fixed-top-no_wpab .boom_bar,
+		html body.boom_bar-fixed-top-above_wpab .boom_bar,
+		html body.boom_bar-fixed-top-below_wpab .boom_bar,
+		html body.boom_bar-fixed-bottom-no_wpab .boom_bar,
+		html body.boom_bar-fixed-bottom-above_wpab .boom_bar,
+		html body.boom_bar-fixed-bottom-below_wpab .boom_bar {
+			position: fixed;
+			right: 0;
+			left: 0;
+		}
+
+		html body.boom_bar-fixed-top-above_wpab #wpadminbar,
+		html body.boom_bar-static-top-above_wpab #wpadminbar {
+			top: 29px;
+		}
+
+		html body.boom_bar-fixed-top-no_wpab .boom_bar,
+		html body.boom_bar-fixed-top-above_wpab .boom_bar {
+			top: 0;
+		}
+
+		html body.boom_bar-fixed-top-below_wpab .boom_bar {
+			top: 32px;
+		}
+
+		html body.boom_bar-fixed-bottom-no_wpab .boom_bar,
+		html body.boom_bar-fixed-bottom-above_wpab .boom_bar,
+		html body.boom_bar-fixed-bottom-below_wpab .boom_bar {
+			bottom: 0;
+		}
+
+		html body.boom_bar-static-top-above_wpab-hide .boom_bar {
+			display: none; }
+
+		.boom_bar-inner-container {
+			line-height: 28px;
+			text-align: center;
+		}
+
+		.boom_bar_closable .boom_bar-inner-container p {
+			padding-right:35px;
+		}
+
+		.boom_bar-login form {
+			display: inline-block;
+			margin: 0 auto;
+			text-align: center;
+			width:100%;
+		}
+		.boom_bar-login form p {
+			display: inline-block;
+		}
+
+		#it_boom_bar_user_pass { display:none; }
+		.boom_bar-login #it_boom_bar_user_pass_text,
+		.boom_bar-login #it_boom_bar_user_login {
+			color: #DDDDDD;
+		}
+
+		.boom_bar-login #it_boom_bar_user_pass_text,
+		.boom_bar-login #it_boom_bar_user_pass,
+		.boom_bar-login #it_boom_bar_user_login {
+			height: auto;
+			margin: 0;
+		}
+		.boom_bar-login input[type="text"],
+		.boom_bar-login input[type="password"]
+		.boom_bar-login input[type="text"]:hover,
+		.boom_bar-login input[type="password"]:hover
+		.boom_bar-login input[type="text"]:focus,
+		.boom_bar-login input[type="password"]:focus {
+			font-size: 16px;
+			height: 28px;
+			background: #fff;
+			padding: 5px;
+		}
+		.boom_bar-login input[type="submit"] {
+			position: absolute;
+			top: 9px;
+			margin-top: 0;
+			padding: 5px 8px 6px;
+			font-size: 14px;
+			border: 0;
+			height: 34px;
+		}
+		.boom_bar-text {
+			-webkit-font-smoothing: antialiased;
+		}
+		a.boom_bar_close {
+			position: absolute;
+			display: inline-block;
+			right: 0px;
+			padding: 8px 10px;
+			height: 18px;
+			width: 18px;
+			text-decoration: none;
+			font-family: 'Arial', sans-serif !important;
+			font-size: 16px;
+			line-height: 1;
+			z-index:99999;
+		}
+
+		a.boom_bar_close:hover {
+			text-decoration: none;
+		}
+
+		/**
+		* Lime Color Scheme
+		**/
+		.boom_bar_lime .boom_bar-inner-container a, .boom_bar_lime.boom_bar-login input[type="submit"] {
+			display: inline-block;
+			background: #a9ffa9;
+			border-radius: 4px;
+			border-bottom: 2px solid #68ce68;
+			padding: 0px 8px;
+			margin: 0 3px;
+			color: #3F633F;
+			text-decoration: none;
+			-webkit-transition:  all .1s linear;
+			-moz-transition:  all .1s linear 0s;
+		}
+		.boom_bar_lime .boom_bar-inner-container a:hover, .boom_bar_lime.boom_bar-login input[type="submit"]:hover {
+			background: #ffffff;
+			color: #3F633F;
+			text-decoration: none;
+			box-shadow: 2px 0 15px rgba(255,255,255,0.5);
+		}
+		.boom_bar_lime a:active, .boom_bar_lime.boom_bar-login input[type="submit"]:active {
+			background: #3f633f;
+			color: #ffffff;
+			text-decoration: none;
+			border-bottom: 2px solid #2f4b2f;
+		}
+		.boom_bar_lime a.boom_bar_close {
+			background: #6da86d;
+			background: rgba(84,128,84,0.3);
+			border-bottom: 2px solid #49a049;
+			border-radius: 3px;
+			color: #99ff99;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			padding: 0px 4px 4px 4px;
+			right: 10px;
+			text-align: center;
+			-webkit-transition:  all .1s linear;
+			-moz-transition:  all .1s linear 0s;
+			cursor: pointer;
+		}
+		.boom_bar_lime a.boom_bar_close:hover {
+			background: #548054;
+			background: rgba(84,128,84,0.8);
+			border-bottom: 2px solid #3a773a;
+			color: #ceffce;
+			text-decoration: none;
+		}
+		.boom_bar_lime a.boom_bar_close:active {
+			border-bottom: 0;
+			box-shadow: inset 0 2px 1px #659B47;
+			background: #6da86d;
+			background: rgba(84,128,84,0.3);
+			color: #99ff99;
+		}
+		.boom_bar_lime.boom_bar-login input[type="text"],
+		.boom_bar_lime.boom_bar-login input[type="text"]:hover,
+		.boom_bar_lime.boom_bar-login input[type="text"]:focus,
+		.boom_bar_lime.boom_bar-login input[type="password"],
+		.boom_bar_lime.boom_bar-login input[type="password"]:hover,
+		.boom_bar_lime.boom_bar-login input[type="password"]:focus {
+			background: #fff;
+			border: none;
+			box-shadow: none;
+		}
+
+		/**
+		* Silver Color Scheme
+		*/
+		.boom_bar_silver {
+			background: #d6dee4; /* Show a solid color for older browsers */
+			background: -moz-linear-gradient(#d6dee4 0%, #a2acb3 100%);
+			background: -o-linear-gradient(#d6dee4, #a2acb3);
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d6dee4), to(#a2acb3)); /* older webkit syntax */
+			background: -webkit-linear-gradient(#d6dee4, #a2acb3);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6dee4', endColorstr='#a2acb3'); /* for IE */
+			border-bottom: 3px double #8a969d;
+			padding: 9px 0 8px;
+			color: #485057;
+			-webkit-font-smoothing: antialiased;
+		}
+		.boom_bar_silver .boom_bar-inner-container a, .boom_bar_silver.boom_bar-login input[type="submit"] {
+			display: inline-block;
+			background: #6f7a85;
+			border-bottom: 2px solid #5c6670;
+			border-radius: 4px;
+			padding: 0 8px;
+			margin: 0 3px;
+			color: #ffffff;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.boom_bar_silver .boom_bar-inner-container a:hover, .boom_bar_silver.boom_bar-login input[type="submit"]:hover {
+			background: #ffffff;
+			border-bottom: 2px solid #d1d9e8;
+			color: #6f7a85;
+			text-decoration: none;
+		}
+		.boom_bar_silver .boom_bar-inner-container a:active, .boom_bar_silver.boom_bar-login input[type="submit"]:active {
+			background: #ffffff;
+			border-bottom: 0;
+			box-shadow: inset 0 2px 1px #b7b7b7;
+		}
+		.boom_bar_silver a.boom_bar_close {
+			background: #a2acb3;
+			border-bottom: 2px solid #79848c;
+			color: #69757d;
+			border-radius: 3px;
+			padding: 5px;
+			font-size: 20px;
+			right: 10px;
+			text-align: center;
+		}
+		.boom_bar_silver a.boom_bar_close:hover {
+			background: #ffffff;
+			border-bottom: 2px solid #c4cbd0;
+			color: #79848c;
+			text-decoration: none;
+		}
+		.boom_bar_silver a.boom_bar_close:active {
+			background: #ffffff;
+			border-bottom: 0;
+			box-shadow: inset 0 2px 1px #b7b7b7;
+			color: #b0bcc5;
+		}
+		.boom_bar_silver.boom_bar-login input[type="text"],
+		.boom_bar_silver.boom_bar-login input[type="text"]:hover,
+		.boom_bar_silver.boom_bar-login input[type="text"]:focus,
+		.boom_bar_silver.boom_bar-login input[type="password"],
+		.boom_bar_silver.boom_bar-login input[type="password"]:hover,
+		.boom_bar_silver.boom_bar-login input[type="password"]:focus {
+			background: #fff;
+			height: 26px;
+			border: none;
+			box-shadow: none;
+		}
+
+
+		/**
+		* Light Color Scheme
+		*/
+		.boom_bar_light {
+			background: #ffffff;
+			padding: 0.5em 0 0.5em 40px;
+			font-size: 16px;
+			text-align: left;
+			border-bottom: 1px solid #d6e2e6;
+			box-shadow: 0 0 12px rgba(0,0,0,0.15);
+			text-shadow: none;
+			color: #8795a5;
+			-webkit-font-smoothing: antialiased;
+		}
+		.boom_bar_light a, .boom_bar_light a:visited, .boom_bar_light.boom_bar-login input[type="submit"] {
+			display: inline-block;
+			background: #e4e9ea;
+			color: #464c54;
+			border-radius: 18px;
+			border: 2px solid #ffffff;
+			padding: 0 12px;
+			margin: 0 5px;
+			text-decoration: none;
+			-webkit-transition:  all .1s linear;
+			-moz-transition:  all .1s linear 0s;
+		}
+		.boom_bar_light a:hover, .boom_bar_light.boom_bar-login input[type="submit"]:hover {
+			background: transparent;
+			border: 2px solid #e4e9ea;
+			text-decoration: none !important;
+		}
+		.boom_bar_light a:active, .boom_bar_light.boom_bar-login input[type="submit"]:active {
+			color: #464c54;
+			border: 2px solid #464c54;
+		}
+		.boom_bar_light a.boom_bar_close {
+			background: transparent;
+			color: #a0a6ac;
+			border-radius: 50%;
+			padding: 2px;
+			font-size: 20px;
+			top: 10px;
+			right: 48px;
+			text-align: center;
+		}
+		.boom_bar_light a.boom_bar_close:hover {
+			background: transparent;
+			border: 2px solid #e0e2e3;
+			text-decoration: none;
+		}
+		.boom_bar_light a.boom_bar_close:active {
+			color: #464c54;
+			border: 2px solid #464c54;
+		}
+		.boom_bar_light.boom_bar-login input[type="text"],
+		.boom_bar_light.boom_bar-login input[type="text"]:hover,
+		.boom_bar_light.boom_bar-login input[type="text"]:focus,
+		.boom_bar_light.boom_bar-login input[type="password"],
+		.boom_bar_light.boom_bar-login input[type="password"]:hover,
+		.boom_bar_light.boom_bar-login input[type="password"]:focus {
+			background: #fff;
+			height: 26px;
+			border: none;
+			box-shadow: none;
+		}
+
+
+		/**
+		* Inset Color Scheme
+		*/
+		.boom_bar_inset {
+			background: #202428;
+			box-shadow: inset 0 -2px 30px #000, 3px 0 0 3px rgba(0,0,0,0.2);
+			border-bottom: none;
+			padding: 9px 0 8px;
+			color: #d2dee1;
+			-webkit-font-smoothing: antialiased;
+			height: auto;
+			min-width: 0;
+			max-width: 100%;
+			width: 100%;
+		}
+		.boom_bar_inset .boom_bar-inner-container a, .boom_bar_inset.boom_bar-login input[type="submit"] {
+			display: inline-block;
+			background: transparent;
+			box-shadow: inset 0 0 10px #000;
+			border-radius: 4px;
+			padding: 2px 8px;
+			margin: 0 3px;
+			color: #a7b2bc;
+			text-decoration: none;
+		}
+		.boom_bar_inset .boom_bar-inner-container a:hover, .boom_bar_inset.boom_bar-login input[type="submit"]:hover {
+			background: #6c7b85;
+			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+			color: #ffffff;
+			text-decoration: none;
+		}
+		.boom_bar_inset .boom_bar-inner-container a:active, .boom_bar_inset.boom_bar-login input[type="submit"]:active {
+			background: #ffffff;
+			color: #2a2f34;
+			text-decoration: none;
+		}
+		.boom_bar_inset a.boom_bar_close {
+			color: #69757d;
+			border-radius: 3px;
+			font-size: 16px;
+			padding: 6px 4px 2px 4px;
+			right: 10px;
+			text-align: center;
+		}
+		.boom_bar_inset a.boom_bar_close:hover {
+			background: #4f5962;
+			box-shadow: inset 0 0 10px #000;
+			color: #ffffff;
+			text-decoration: none;
+		}
+		.boom_bar_inset a.boom_bar_close:active {
+			background: #2a2f34;
+			color: #ffffff;
+		}
+		.boom_bar_inset.boom_bar-login input[type="text"],
+		.boom_bar_inset.boom_bar-login input[type="text"]:hover,
+		.boom_bar_inset.boom_bar-login input[type="text"]:focus,
+		.boom_bar_inset.boom_bar-login input[type="password"],
+		.boom_bar_inset.boom_bar-login input[type="password"]:hover,
+		.boom_bar_inset.boom_bar-login input[type="password"]:focus {
+			background: #fff;
+			height: 26px;
+			border: none;
+			box-shadow: none;
+		}
+
+
+		/**
+		 * Flat Dark Color Scheme
+		*/
+		.boom_bar_flatdark {
+			background: #747980;
+			border: none;
+			text-shadow: none;
+			color: #ffffff;
+			padding: 8px 0;
+			-webkit-font-smoothing: antialiased;
+		}
+		.boom_bar_flatdark a, .boom_bar_flatdark a:visited, .boom_bar_flatdark.boom_bar-login input[type="submit"] {
+			display: inline-block;
+			background: #666a73;
+			color: #ffffff;
+			padding: 0px 13px;
+			margin: 0 0 0 0px;
+			border-bottom: none;
+			text-decoration: none;
+			-webkit-transition:  all .1s linear;
+			-moz-transition:  all .1s linear 0s;
+		}
+		.boom_bar_flatdark.boom_bar-login input[type="submit"] {
+			top: 0;
+			border-radius: 0;
+			height: 100%;
+		}
+		.boom_bar_flatdark a:hover, .boom_bar_flatdark.boom_bar-login input[type="submit"]:hover {
+			color: #ffffff;
+			background: #969fab;
+			text-decoration: none !important;
+		}
+		.boom_bar_flatdark a:active, .boom_bar_flatdark.boom_bar-login input[type="submit"]:active {
+			background: #37393f;
+			color: #ffffff;
+		}
+		.boom_bar_flatdark a.boom_bar_close {
+			background: #666a73;
+			color: #ffffff;
+			padding: 14px 13px 12px 13px;
+			font-size: 18px;
+			font-weight: bold;
+			top: 0;
+			height: 100%;
+			border: none;
+			text-align: center;
+		}
+		.boom_bar_flatdark a.boom_bar_close:hover {
+			color: #fff;
+			background: #969fab;
+			text-decoration: none;
+		}
+		.boom_bar_flatdark.boom_bar-login input[type="text"],
+		.boom_bar_flatdark.boom_bar-login input[type="text"]:hover,
+		.boom_bar_flatdark.boom_bar-login input[type="text"]:focus,
+		.boom_bar_flatdark.boom_bar-login input[type="password"],
+		.boom_bar_flatdark.boom_bar-login input[type="password"]:hover,
+		.boom_bar_flatdark.boom_bar-login input[type="password"]:focus {
+			background: #fff;
+			height: 26px;
+			border: none;
+			box-shadow: none;
+		}
+
+		/**
+		* Spring is in the Boombar
+		**/
+		.boom_bar_seasonal {
+			background: #d0f1f5;
+			border-bottom: 4px solid #b4e1ae;
+			padding: 8px 0;
+			color: #1e545a;
+		}
+		.boom_bar_seasonal .boom_bar-inner-container a, .boom_bar_seasonal.boom_bar-login input[type="submit"] {
+			display: inline-block;
+			background: #FFF99E;
+			border-radius: 4px;
+			border-bottom: 2px solid #c6c063;
+			padding: 0px 8px;
+			margin: 0 3px;
+			color: #848154;
+			text-decoration: none;
+			-webkit-transition:  all .1s linear;
+			-moz-transition:  all .1s linear 0s;
+			font-weight: bold;
+		}
+		.boom_bar_seasonal .boom_bar-inner-container a:hover, .boom_bar_seasonal.boom_bar-login input[type="submit"]:hover {
+			background: #fffccc;
+			color: #858255;
+			text-decoration: none;
+			box-shadow: 0 0 15px rgba(243,236,124,0.5);
+			border-bottom: 2px solid #d4cd66;
+		}
+		.boom_bar_seasonal a:active, .boom_bar_seasonal.boom_bar-login input[type="submit"]:active {
+			background: #f3eb7b;
+			color: #d4cd66;
+		}
+		.boom_bar_seasonal a.boom_bar_close {
+			background: #FFF99E;
+			border-bottom: 2px solid #c6c063;
+			border-radius: 3px;
+			color: #848154;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			line-height: 1.3;
+			padding: 3px 4px 4px 4px;
+			right: 10px;
+			text-align: center;
+			-webkit-transition:  all .1s linear;
+			-moz-transition:  all .1s linear 0s;
+			font-weight: bold;
+		}
+		.boom_bar_seasonal a.boom_bar_close:hover {
+			background: #fffccc;
+			color: #858255;
+			text-decoration: none;
+			box-shadow: 0 0 15px #fff931;
+			border-bottom: 2px solid #d4cd66;
+		}
+		.boom_bar_seasonal a.boom_bar_close:active {
+			border-bottom: 0;
+			box-shadow: inset 0 2px 5px #b7b059;
+			background: #f3ec7c;
+		}
+		.boom_bar_seasonal.boom_bar-login input[type="text"],
+		.boom_bar_seasonal.boom_bar-login input[type="text"]:hover,
+		.boom_bar_seasonal.boom_bar-login input[type="text"]:focus,
+		.boom_bar_seasonal.boom_bar-login input[type="password"],
+		.boom_bar_seasonal.boom_bar-login input[type="password"]:hover,
+		.boom_bar_seasonal.boom_bar-login input[type="password"]:focus {
+			background: #fff;
+			border: none;
+			box-shadow: none;
+		}
+
+		/** Hide if no JS */
+		a.boombar-hide-if-no-js, 
+		.boombar-hide-if-no-js {
+			display: none;
+		}
+
+		/** Less than 1024px Media Query */
+		@media screen and (max-width: 1024px) {
+			.boom_bar .boom_bar-inner-container {
+				padding-right: 35px;
+			}
+		}
+
+		/**
+		* IE 6-targeted rules
+		*/
+		* html #wpadminbar {
+			overflow: hidden;
+			position: absolute;
+		}
